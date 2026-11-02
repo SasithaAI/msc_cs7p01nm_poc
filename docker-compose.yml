@@ -1,0 +1,13 @@
+services:
+  msc-poc-dev:
+    build: .
+    container_name: cs7p01nm_poc
+    volumes:
+      - .:/app
+    ports:
+      - "8501:8501"
+    environment:
+      - OLLAMA_HOST=http://host.docker.internal:11434
+      - PYTHONPATH=/app
+    stdin_open: true
+    tty: true
