@@ -2,7 +2,11 @@
 __pycache__/
 *.pyc
 .DS_Store
+# Ignore data contents, but allow .gitkeep files so folder structure is preserved
 data/raw/*
+!data/raw/.gitkeep
 data/parquet_cache/*
+!data/parquet_cache/.gitkeep
 data/synthetic_sdv/*
+!data/synthetic_sdv/.gitkeep
 !data/DATA_CATALOGUE.md
